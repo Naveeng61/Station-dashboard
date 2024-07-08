@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Tickets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .box h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .box p {
+            font-size: 48px;
+            margin: 10px 0;
+            color: #d9534f;
+        }
+        .donut-chart {
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(#007bff 0% 1%, #ccc 1% 100%);
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+        }
+        .donut-chart span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+        }
+        .progress-bar {
+            background: linear-gradient(to right, #f06, #833ab4);
+            border-radius: 5px;
+            height: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Hardware Ticktes</h2>
+            <p>4573</p>
+        </div>
+        <div class="box">
+            <h2>Tickets Raised Today</h2>
+            <p>126</p>
+        </div>
+        <div class="box">
+            <h2>Open Tickets</h2>
+            <p>10</p>
+        </div>
+        <div class="box">
+            <h2>Tickets On Hold</h2>
+            <p>2</p>
+        </div>
+        <div class="box">
+            <h2>Unassigned Tickets</h2>
+            <p>8</p>
+        </div>
+        <div class="box">
+            <h2>Tickets closed Today</h2>
+            <p>106</p>
+        </div>
+        
+        <div class="box">
+            <h2>My Closed & Open Tickets</h2>
+            <div class="progress-bar" style="width: 65%;">Closed (106)</div>
+            <div class="progress-bar" style="width: 40%;">Open (10)</div>
+            <div class="progress-bar" style="width: 20%;">Hold (2)</div>
+           
+        </div>
+    </div>
+</body>
+</html>
